@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body{
+font-family: "Monserrat", sans-serif;
+overflow: hidden;
+}
+
+/*===================MENU==========================*/
+
+#menu li > a{
+font-size: 18px !important; 
+font-weight: 600;
+color: #3f3f3f;
+}
+
+#menu form > button {
+font-size: 16px;
+font-weight: bold;
+}
+
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carrusel-inner{
+max-height: 39rem !important;
+}
+
+/*===================SECCION NUESTRO EQUIPO nosotros==========================*/
+
+.equipo{
+    margin: 30px;
+}
+.equipo-img{
+    max-height: 30rem !important;
+    width: 50%;
+    
+   
+}
+
+/*===================SECCION NUESTRO EQUIPO mapa==========================*/
+.mapa{
+    background: url(./images/map.png);
+    width: 120%;
+    height: 500px;
+   
+}
+
+#local{
+   background: #f3f3f3; 
+   padding-bottom: 300px;
+   display: flex;
+   justify-content: center;
+     
+}
+
+
+.wrapper-local{
+    width: 70%;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin: 0 !important;
+    padding: 0px !important;
+}
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    text-align: left;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left:20px;
+}
+#numeros-local p{
+    margin:0;
+}
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contacto{
+    position: relative;
+    top:-200px;
+}
+
+
+#seccion-contacto{
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fbfafa;
+border-radius: 5px;
+max-width: 500px;
+}
+
+#titulo-formulario{
+    color: #3f3f3f;
+}
+
+
+
+/*=========================FOOTER================================*/
+
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+
+footer {
+    color: #f3f3f3;
+    text-align: center;
+    
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0px 8px;
+    color: #f3f3f3;
+}
+
+/*---------------MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM------------*/
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #local, #equipo{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width: 768px){
+#intro, #equipo{
+    width: 90% !important;
+    margin: auto;
+    }
+
+#img-equipo{
+    max-height: 20rem;
+    width: 90%;
+}
+
+#equipo p{
+    display: none;
+}
+.wrapper-local{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.local{
+    flex-wrap: wrap;
+}
+
+.servicios-fila{
+    width: 100% !important;
+    text-align: center;
+}
+
+#bg-contacto{
+    top: -110 px;
+}
+
+#contenedor-formulario{
+    top: 300%;
+    left: 50%;
+}
+
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px){
+    .icono-wrap{
+    flex-wrap: wrap; 
+    justify-content: center !important;
+    }
+}
